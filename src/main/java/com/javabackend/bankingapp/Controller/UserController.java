@@ -12,7 +12,10 @@ import java.util.Map;
 
 @RestController
 @RequestMapping ("/api")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://banking-app-frontend-rakesh.netlify.app"
+})
 public class UserController {
 
     @Autowired
